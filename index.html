@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Section with AOS and Keyframes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @keyframes pulseEffect {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <section
+        class="min-h-screen flex items-center justify-center flex-col bg-gradient-to-b from-blue-500 to-purple-700 text-white px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up" style="animation: pulseEffect 3s infinite;">
+            Welcome to the Creativity Task
+        </h1>
+        <div class="mt-8 max-w-[500px] rounded-3xl" data-aos="zoom-in" data-aos-delay="600">
+            <img src="./assets/image/top-section-bg.jpeg" alt="nature">
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
+
+</body>
+
+</html>
